@@ -6,10 +6,6 @@ function [gapfilled]=SSRBF_function(SLCoff,known)
 %    sigma1     The empirically determined parameter for the spatial-based RBF
 %    sigma2     The empirically determined parameter for the spectral-based RBF
 
-w=17;
-s=20;
-sigma1=50;
-sigma2=0.1;
 
 Gapmask=double(logical(SLCoff(:,:,1).*SLCoff(:,:,2).*SLCoff(:,:,3).*SLCoff(:,:,4).*SLCoff(:,:,5).*SLCoff(:,:,6)));
 [a,b,c]=size(known);
