@@ -1,4 +1,4 @@
-function [gapfilled]=SSRBF_function(SLCoff,known)
+function [gapfilled]=SSRBF_function(SLCoff,known,w,s,sigma1,sigma2)
 % Parameters
 %
 %    w          Half the window side
