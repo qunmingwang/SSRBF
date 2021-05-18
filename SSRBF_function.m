@@ -1,12 +1,4 @@
 function [gapfilled]=SSRBF_function(SLCoff,known,w,s,sigma1,sigma2)
-% Parameters
-%
-%    w          Half the window side
-%    s          The number of similar pixels per moving window
-%    sigma1     The empirically determined parameter for the spatial-based RBF
-%    sigma2     The empirically determined parameter for the spectral-based RBF
-
-
 Gapmask=double(logical(SLCoff(:,:,1).*SLCoff(:,:,2).*SLCoff(:,:,3).*SLCoff(:,:,4).*SLCoff(:,:,5).*SLCoff(:,:,6)));
 [a,b,c]=size(known);
 for n=1:c
